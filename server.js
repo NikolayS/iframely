@@ -20,7 +20,7 @@ if (CONFIG.allowedOrigins) {
 
         if (origin) {
             if (CONFIG.allowedOrigins.indexOf('*') > -1) {
-                res.setHeader('Access-Control-Allow-Origin', '*');
+                res.setHeader('Access-Control-Allow-Origin', origin);
             } else {
                 if (CONFIG.allowedOrigins.indexOf(origin) > -1) {
                     res.setHeader('Access-Control-Allow-Origin', origin);
